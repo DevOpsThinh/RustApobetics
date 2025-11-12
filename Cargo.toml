@@ -1,0 +1,18 @@
+[package]
+name = "rust_apobetics"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+members = [
+  "algorithms_foundation",
+  "language_foundation",
+]
+
+[workspace.package]
+version = "0.1.0"
+authors = ["Thinh Truong Nguyen"]
+
+[dependencies]
+language_foundation = { path = "language_foundation" }
+algorithms_foundation = { path = "algorithms_foundation" }

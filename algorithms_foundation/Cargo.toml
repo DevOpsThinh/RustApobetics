@@ -1,0 +1,7 @@
+[package]
+name = "algorithms_foundation"
+edition = "2024"
+version.workspace = true
+authors.workspace = true
+
+[dependencies]
