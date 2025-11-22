@@ -28,20 +28,37 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Created At: 21:30 - 12/11/2025
+Created At: 16:18 - 22/11/2025
 */
-use algorithms_foundation::search;
-use language_foundation::std_collections::dynamic_array as vector;
 
-fn main() {
-    let my_array = [1, 2, 3, 4, 5];
-    let key = 3;
-    println!("My integer array {:?}\n", my_array);
-    println!(
-        "=> {} is a member of that array: {}",
-        key,
-        search(key, my_array)
-    );
+#[cfg(test)]
+mod dynamic_array_test {
+    use crate::std_collections::dynamic_array as dy_arr ;
 
-    vector::vector_operations();
+    #[test]
+    fn remove_operation_with_positive_case() {
+        let mut _vector = vec![
+            "one".to_string(),
+            "two".to_string(),
+            "three".to_string(),
+            "two".to_string(),
+        ];
+
+        _vector = dy_arr::remove_element(_vector, String::from("two"));
+
+        assert_eq!(_vector, ["one", "three", "two"]);
+    }
+
+    #[test]
+    fn add_operation_with_positive_case() {
+        let mut _vector = vec![
+            "one".to_string(),
+            "two".to_string(),
+            "three".to_string()
+        ];
+
+        _vector = dy_arr::add_element(_vector, String::from("four"));
+        
+        assert_eq!(_vector, ["one", "two", "three", "four"]);
+    }
 }

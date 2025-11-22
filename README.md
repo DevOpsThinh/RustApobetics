@@ -28,7 +28,11 @@ Finally, I decided to use Rust (a new programming language for me but easy to ap
 
 - Rust 1.91.1+
 
-- RustRover 2025 or other IDEs with a plugin (Rust Analyzer) for Rust
+- RustRover 2025 or other IDEs with a plugin (Rust Analyzer) for Rust, or
+
+- [Compiler Explorer & Rust](https://godbolt.org/) (Only some parts of our code);
+
+- [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024).
 
 ## Installation
 
