@@ -103,7 +103,7 @@ pub fn add_element<T>(mut vector: Vec<T>, element: T) -> Vec<T> {
 /// let v = vec!["a".to_string(), "b".to_string(), "c".to_string()];
 /// let v = remove_element(v, "b".to_string());
 /// assert_eq!(v, vec!["a", "c"]);
-/// `
+/// ```
 pub fn remove_element(mut vector: Vec<String>, element: String) -> Vec<String> {
 
     if !valid_vector(&vector){
@@ -136,7 +136,7 @@ pub fn remove_element(mut vector: Vec<String>, element: String) -> Vec<String> {
 /// assert!(valid_vector(&v));
 /// let empty: Vec<String> = Vec::new();
 /// assert!(!valid_vector(&empty));
-/// ``
+/// ```
 fn valid_vector<T>(vector: &Vec<T>) -> bool {
     !vector.is_empty()
 }

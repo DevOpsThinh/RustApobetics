@@ -32,6 +32,7 @@ Created At: 21:30 - 12/11/2025
 */
 use algorithms_foundation::search;
 use language_foundation::std_collections::dynamic_array as vector;
+use language_foundation::std_collections::text_manipulation as tm;
 
 fn main() {
     let my_array = [1, 2, 3, 4, 5];
@@ -44,4 +45,7 @@ fn main() {
     );
 
     vector::vector_operations();
+    // Open your terminal at this project folder, then enter:
+    // cargo run -- "your username"
+    tm::simple_cmd_program();
 }
