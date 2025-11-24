@@ -79,11 +79,13 @@ pub fn simple_cmd_program() {
 ///
 /// ```
 /// let resp = process_command("Ferris");
-/// assert_eq!(resp, Response::from("\nHi, Ferris Rustacean!\n"));
+/// assert_eq!(resp, Response::from("\nHi, <Ferris> Rustacean!\n"));
 /// ```
 fn process_command(cmd: &str) -> Response {
     let mut response = Response::from("\nHi, ");
     response.push_str(cmd);
+
+    let mut response = response.replacen(cmd, &format!("<{}>", cmd), 1);
     response.push_str(" Rustacean!");
     response.push('\n');
     response
@@ -96,7 +98,6 @@ mod tests {
     #[test]
     fn process_command_with_positive_case() {
         let result = process_command("DevopsThinh");
-        assert_eq!(result, "\nHi, DevopsThinh Rustacean!\n");
+        assert_eq!(result, "\nHi, <DevopsThinh> Rustacean!\n");
     }
 }
-
