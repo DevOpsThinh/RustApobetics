@@ -28,45 +28,34 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Created At: 21:30 - 12/11/2025
+Created At: 23:36 - 25/11/2025
 */
-use algorithms_foundation::basic_algorithms:: {
-    linear_search::search,
-};
-use algorithms_foundation::cryptography::vigenere_cipher:: {
-    Cipher,
-    VigenereCipher,
-};
-use language_foundation::std_collections::{
-    dynamic_array as vector,
-    text_manipulation as tm
-};
 
-fn main() {
-    let my_array = [1, 2, 3, 4, 5];
-    let key = 3;
-    println!("My integer array {:?}\n", my_array);
-    println!(
-        "=> {} is a member of that array: {}",
-        key,
-        search(key, my_array)
-    );
+#[cfg(test)]
+mod vigenere_cipher_test {
+    use crate::cryptography::vigenere_cipher::{
+        Cipher,
+        VigenereCipher,
+    };
 
-    vector::vector_operations();
-    // Open your terminal at this project folder, then enter:
-    // cargo run -- "your username"
-    // tm::simple_cmd_program();   // Uncomment if you want try it.
+    fn create_cipher() -> VigenereCipher {
+        VigenereCipher::new("12345")
+    }
 
-    vigenere_cipher_operations();
-}
+    #[test]
+    fn encryption_operation_with_positive_case() {
+        let cipher = create_cipher();
+        let encrypted_string = cipher.encrypt("Thinh Rustacean");
 
-fn vigenere_cipher_operations() {
-    let cipher = VigenereCipher::new("12345");
+        assert_eq!(encrypted_string, "TikqleX1-2knqn1");
+    }
 
-    let encrypted_string = cipher.encrypt("Thinh Rustacean");
-    println!("\nEncrypted Text: {}", encrypted_string);
-    // A simulation for async tasks
-    std::thread::sleep(std::time::Duration::from_secs(1));
-    let decrypted_string = cipher.decrypt(encrypted_string.as_str());
-    println!("Decrypted Text: {}\n", decrypted_string);
+    #[test]
+    fn decryption_operation_with_positive_case() {
+        let cipher = create_cipher();
+
+        let decrypted_string = cipher.decrypt("TikqleX1-2knqn1");
+
+        assert_eq!(decrypted_string, "Thinh Rustacean");
+    }
 }

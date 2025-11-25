@@ -38,6 +38,14 @@ Finally, I decided to use Rust (a new programming language for me but easy to ap
 
 ## Parts
 
+### I. Rust Fundamental
+
+- [Rust Standard Library (Types, Data Structures, ...)](https://github.com/DevOpsThinh/RustApobetics/tree/master/language_foundation/src)
+
+### II. Program Algorithms with Rust
+
+- [Algorithms (Cryptography, ...)](https://github.com/DevOpsThinh/RustApobetics/tree/master/algorithms_foundation/src)
+
 ## Next steps
 
 > Please give me a star, thanks!

@@ -30,30 +30,5 @@ THE SOFTWARE.
 
 Created At: 21:21 - 12/11/2025
 */
-
-/// A classical linear search algorithm for an integer 32  array with five elements
-pub fn search(k: i32, my_arr: [i32; 5] ) -> bool {
-    for i in my_arr.iter() {
-           if k == *i {
-               return true;
-           }
-    }
-    return false;
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works_with_negative_case() {
-        let result = search(6, [1, 2, 3, 4, 5]);
-        assert_eq!(result, false);
-    }
-
-    #[test]
-    fn it_works_with_positive_case() {
-        let result = search(3, [1, 2, 3, 4, 5]);
-        assert_eq!(result, true);
-    }
-}
+pub mod cryptography;
+pub mod basic_algorithms;
