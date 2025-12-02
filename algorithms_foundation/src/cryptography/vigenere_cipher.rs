@@ -70,7 +70,7 @@ impl VigenereCipher {
                 .into_iter()
                 .position(|c| c == char)
                 .unwrap_or(ALPHABET.len() - 1);
-            let (j, pc) = pad
+            let (j, _pc) = pad
                 .char_indices()
                 .nth(index)
                 .unwrap_or((0, pad.chars().nth(0).unwrap_or(*DEFAULT_PAD_DIGIT)));
@@ -101,7 +101,7 @@ impl VigenereCipher {
                 .into_iter()
                 .position(|c| c == char)
                 .unwrap_or(ALPHABET.len() - 1);
-            let (j, pc) = pad
+            let (j, _pc) = pad
                 .char_indices()
                 .nth(index)
                 .unwrap_or((0, pad.chars().nth(0).unwrap_or(*DEFAULT_PAD_DIGIT)));

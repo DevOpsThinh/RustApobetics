@@ -46,6 +46,19 @@ Finally, I decided to use Rust (a new programming language for me but easy to ap
 
 - [Algorithms (Cryptography, ...)](https://github.com/DevOpsThinh/RustApobetics/tree/master/algorithms_foundation/src)
 
+### III. Mini Projects
+
+- [Elektor Store](https://github.com/DevOpsThinh/RustApobetics/tree/master/mini_projects/elektor_store)
+
+In this project, we've explored several key areas in software engineering with Rust:
+
+- Data modeling with structs and enums;
+- An approach to Generic Programming (Rust's Const generic parameter syntax);
+- A like object-oriented programming model based on Composition over Inheritance;
+- Handling user input safely, avoiding errors, and ensuring a good user experience;
+- Ownership and Borrowing techniques (in action) in Rust;
+- Using Sub-modules to split large Rust files into manageable components.
+
 ## Next steps
 
 > Please give me a star, thanks!

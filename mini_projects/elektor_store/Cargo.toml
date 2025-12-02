@@ -1,0 +1,8 @@
+[package]
+name = "elektor_store"
+edition = "2024"
+version.workspace = true
+authors.workspace = true
+
+[dependencies]
+presentation = { path = "src/presentation" }

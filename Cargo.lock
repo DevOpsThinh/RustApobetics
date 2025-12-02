@@ -7,8 +7,26 @@ name = "algorithms_foundation"
 version = "0.1.0"
 
 [[package]]
+name = "domain"
+version = "0.1.0"
+
+[[package]]
+name = "elektor_store"
+version = "0.1.0"
+dependencies = [
+ "presentation",
+]
+
+[[package]]
 name = "language_foundation"
 version = "0.1.0"
+
+[[package]]
+name = "presentation"
+version = "0.1.0"
+dependencies = [
+ "domain",
+]
 
 [[package]]
 name = "rust_apobetics"

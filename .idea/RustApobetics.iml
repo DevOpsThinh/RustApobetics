@@ -5,6 +5,9 @@
       <sourceFolder url="file://$MODULE_DIR$/language_foundation/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms_foundation/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mini_projects/elektor_store/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mini_projects/elektor_store/src/domain/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mini_projects/elektor_store/src/presentation/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/language_foundation/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
