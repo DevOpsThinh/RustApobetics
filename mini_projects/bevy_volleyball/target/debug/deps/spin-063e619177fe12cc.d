@@ -1,0 +1,12 @@
+D:\Repositories\RustApobetics\mini_projects\bevy_volleyball\target\debug\deps\spin-063e619177fe12cc.d: C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\lib.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\barrier.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\lazy.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\mutex.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\mutex\spin.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\once.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\relax.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\rwlock.rs
+
+D:\Repositories\RustApobetics\mini_projects\bevy_volleyball\target\debug\deps\libspin-063e619177fe12cc.rmeta: C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\lib.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\barrier.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\lazy.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\mutex.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\mutex\spin.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\once.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\relax.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\rwlock.rs
+
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\lib.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\barrier.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\lazy.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\mutex.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\mutex\spin.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\once.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\relax.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\spin-0.10.0\src\rwlock.rs:

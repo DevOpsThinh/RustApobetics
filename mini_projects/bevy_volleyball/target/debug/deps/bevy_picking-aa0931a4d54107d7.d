@@ -1,0 +1,11 @@
+D:\Repositories\RustApobetics\mini_projects\bevy_volleyball\target\debug\deps\bevy_picking-aa0931a4d54107d7.d: C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\lib.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\backend.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\events.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\hover.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\input.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\pointer.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\window.rs
+
+D:\Repositories\RustApobetics\mini_projects\bevy_volleyball\target\debug\deps\libbevy_picking-aa0931a4d54107d7.rmeta: C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\lib.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\backend.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\events.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\hover.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\input.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\pointer.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\window.rs
+
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\lib.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\backend.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\events.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\hover.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\input.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\pointer.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_picking-0.17.3\src\window.rs:

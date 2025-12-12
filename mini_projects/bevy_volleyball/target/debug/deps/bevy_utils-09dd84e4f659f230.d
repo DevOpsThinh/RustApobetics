@@ -1,0 +1,10 @@
+D:\Repositories\RustApobetics\mini_projects\bevy_volleyball\target\debug\deps\bevy_utils-09dd84e4f659f230.d: C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\lib.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\debug_info.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\default.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\once.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\map.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\parallel_queue.rs
+
+D:\Repositories\RustApobetics\mini_projects\bevy_volleyball\target\debug\deps\libbevy_utils-09dd84e4f659f230.rmeta: C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\lib.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\debug_info.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\default.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\once.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\map.rs C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\parallel_queue.rs
+
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\lib.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\debug_info.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\default.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\once.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\map.rs:
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bevy_utils-0.17.3\src\parallel_queue.rs:

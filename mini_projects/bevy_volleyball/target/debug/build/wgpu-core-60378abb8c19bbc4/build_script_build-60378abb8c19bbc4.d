@@ -1,0 +1,5 @@
+D:\Repositories\RustApobetics\mini_projects\bevy_volleyball\target\debug\build\wgpu-core-60378abb8c19bbc4\build_script_build-60378abb8c19bbc4.d: C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wgpu-core-26.0.1\build.rs
+
+D:\Repositories\RustApobetics\mini_projects\bevy_volleyball\target\debug\build\wgpu-core-60378abb8c19bbc4\build_script_build-60378abb8c19bbc4.exe: C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wgpu-core-26.0.1\build.rs
+
+C:\Users\anhst\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wgpu-core-26.0.1\build.rs:
