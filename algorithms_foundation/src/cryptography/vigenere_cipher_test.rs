@@ -53,7 +53,6 @@ mod vigenere_cipher_test {
     #[test]
     fn decryption_operation_with_positive_case() {
         let cipher = create_cipher();
-
         let decrypted_string = cipher.decrypt("TikqleX1-2knqn1");
 
         assert_eq!(decrypted_string, "Thinh Rustacean");

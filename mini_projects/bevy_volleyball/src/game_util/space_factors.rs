@@ -28,45 +28,37 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Created At: 21:30 - 12/11/2025
+Created At: 22:47 - 06/12/2025
 */
-use algorithms_foundation::basic_algorithms:: {
-    linear_search::search,
-};
-use algorithms_foundation::cryptography::vigenere_cipher:: {
-    Cipher,
-    VigenereCipher,
-};
-use language_foundation::std_collections::{
-    dynamic_array as vector,
-    // text_manipulation as tm
-};
+use crate::game_util::constants::{PHYSIC_HEIGHT, PHYSIC_WIDTH};
 
-fn main() {
-    let my_array = [1, 2, 3, 4, 5];
-    let key = 3;
-    println!("My integer array {:?}\n", my_array);
-    println!(
-        "=> {} is a member of that array: {}",
-        key,
-        search(key, my_array)
-    );
-
-    vector::vector_operations();
-    // Open your terminal at this project folder, then enter:
-    // cargo run -- "your username"
-    // tm::simple_cmd_program();   // Uncomment if you want try it.
-
-    vigenere_cipher_operations();
+pub const fn width_factor() -> f32 {
+    match PHYSIC_WIDTH {
+        // Common PC - Laptop screen resolutions
+        960 => 6.0,
+        1366 => 8.5375,
+        1280 => 8.0,
+        1600 => 10.0,
+        1920 => 12.0,
+        2560 => 16.0,
+        2880 => 18.0,
+        3840 => 24.0,
+        _ => 12.0,
+    }
 }
 
-fn vigenere_cipher_operations() {
-    let cipher = VigenereCipher::new("12345");
-
-    let encrypted_string = cipher.encrypt("Thinh Rustacean");
-    println!("\nEncrypted Text: {}", encrypted_string);
-    // A simulation for async tasks
-    std::thread::sleep(std::time::Duration::from_secs(1));
-    let decrypted_string = cipher.decrypt(encrypted_string.as_str());
-    println!("Decrypted Text: {}\n", decrypted_string);
+pub const fn size_factor() -> f32 {
+    match PHYSIC_HEIGHT {
+        // Common PC - Laptop screen resolutions
+        540 => 1.0,
+        768 => 1.42,
+        800 => 1.48,
+        900 => 1.67,
+        1080 => 2.0,
+        1440 => 2.67,
+        1864 => 3.45,
+        2160 => 4.0,
+        _ => 2.0,
+    }
 }
+

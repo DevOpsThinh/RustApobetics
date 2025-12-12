@@ -28,45 +28,62 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Created At: 21:30 - 12/11/2025
+Created At: 14:54 - 04/12/2025
 */
-use algorithms_foundation::basic_algorithms:: {
-    linear_search::search,
-};
-use algorithms_foundation::cryptography::vigenere_cipher:: {
-    Cipher,
-    VigenereCipher,
-};
-use language_foundation::std_collections::{
-    dynamic_array as vector,
-    // text_manipulation as tm
-};
+use bevy::prelude::{Component, KeyCode};
 
-fn main() {
-    let my_array = [1, 2, 3, 4, 5];
-    let key = 3;
-    println!("My integer array {:?}\n", my_array);
-    println!(
-        "=> {} is a member of that array: {}",
-        key,
-        search(key, my_array)
-    );
-
-    vector::vector_operations();
-    // Open your terminal at this project folder, then enter:
-    // cargo run -- "your username"
-    // tm::simple_cmd_program();   // Uncomment if you want try it.
-
-    vigenere_cipher_operations();
+#[derive(Component, Debug, Clone, Copy, PartialEq, Eq)]
+pub enum Side {
+    Left,
+    Right,
 }
 
-fn vigenere_cipher_operations() {
-    let cipher = VigenereCipher::new("12345");
+impl Side {
+    pub fn left_direction_key(&self) -> KeyCode {
+        match self {
+            Side::Left => KeyCode::KeyA,
+            Side::Right => KeyCode::Numpad4,
+        }
+    }
 
-    let encrypted_string = cipher.encrypt("Thinh Rustacean");
-    println!("\nEncrypted Text: {}", encrypted_string);
-    // A simulation for async tasks
-    std::thread::sleep(std::time::Duration::from_secs(1));
-    let decrypted_string = cipher.decrypt(encrypted_string.as_str());
-    println!("Decrypted Text: {}\n", decrypted_string);
+    pub fn right_direction_key(&self) -> KeyCode {
+        match self {
+            Side::Left => KeyCode::KeyD,
+            Side::Right => KeyCode::Numpad6,
+        }
+    }
+
+    pub fn bounded_range(
+        &self, 
+        character_width: f32, 
+        screen_width: f32
+    ) -> (f32, f32) {
+        match self {
+            Side::Left => (
+                character_width / 2.0,
+                (screen_width / 2.0) - (character_width / 2.0),
+            ),
+            Side::Right => (
+                (screen_width / 2.0) + (character_width / 2.0),
+                screen_width - (character_width / 2.0),
+            ),
+        }
+    }
+}
+
+#[derive(Component)]
+pub struct Character {
+    side: Side,
+}
+
+impl Character {
+    pub fn new(side: Side) -> Self {
+        Character { side }
+    }
+    // pub fn set_side(&mut self, side: Side) {
+    //     self.side = side
+    // }
+    pub fn get_side(&self) -> &Side {
+        &self.side
+    }
 }

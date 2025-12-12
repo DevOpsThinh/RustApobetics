@@ -28,45 +28,43 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Created At: 21:30 - 12/11/2025
+Created At: 16:09 - 11/12/2025
 */
-use algorithms_foundation::basic_algorithms:: {
-    linear_search::search,
-};
-use algorithms_foundation::cryptography::vigenere_cipher:: {
-    Cipher,
-    VigenereCipher,
-};
-use language_foundation::std_collections::{
-    dynamic_array as vector,
-    // text_manipulation as tm
-};
+use bevy::prelude::Resource;
 
-fn main() {
-    let my_array = [1, 2, 3, 4, 5];
-    let key = 3;
-    println!("My integer array {:?}\n", my_array);
-    println!(
-        "=> {} is a member of that array: {}",
-        key,
-        search(key, my_array)
-    );
-
-    vector::vector_operations();
-    // Open your terminal at this project folder, then enter:
-    // cargo run -- "your username"
-    // tm::simple_cmd_program();   // Uncomment if you want try it.
-
-    vigenere_cipher_operations();
+#[derive(Resource)]
+pub struct GameAudioResource {
+    items: Vec<String>,
 }
 
-fn vigenere_cipher_operations() {
-    let cipher = VigenereCipher::new("12345");
+impl GameAudioResource {
+    pub fn new(list: Vec<&str>) -> Self {
+        GameAudioResource {
+            items: list.iter().map(|s| s.to_string()).collect(),
+        }
+    }
+    
+    // pub fn add_audio(&mut self, item: &str) {
+    //     self.items.push(item.to_string());
+    // }
+    
+    // pub fn remove_audio(&mut self, item: &str) {
+    //     self.items.retain(|item| item != item);
+    // }
+    
+    pub fn search_audio(&self, audio_path: &'static str) -> Option<String> {
+        let mut item = "";
+        for audio in &self.items {
+            if audio.eq(audio_path) {
+                item = audio;
+                break;
+            }
+        }
+      
+        Some(item.to_string())
+    }
 
-    let encrypted_string = cipher.encrypt("Thinh Rustacean");
-    println!("\nEncrypted Text: {}", encrypted_string);
-    // A simulation for async tasks
-    std::thread::sleep(std::time::Duration::from_secs(1));
-    let decrypted_string = cipher.decrypt(encrypted_string.as_str());
-    println!("Decrypted Text: {}\n", decrypted_string);
+    // pub fn audio_list(&self) -> &Vec<String> {
+    //     &self.items
+    // }
 }

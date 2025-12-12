@@ -28,45 +28,28 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Created At: 21:30 - 12/11/2025
+Created At: 02:51 - 11/12/2025
 */
-use algorithms_foundation::basic_algorithms:: {
-    linear_search::search,
+use crate::game_data::audio_resource::GameAudioResource;
+use crate::game_util::constants::{
+    BALL_BOUNCE_SOUND, BLOB_SOUND, MUSIC_BACKGROUND, SCORE_SOUND
 };
-use algorithms_foundation::cryptography::vigenere_cipher:: {
-    Cipher,
-    VigenereCipher,
-};
-use language_foundation::std_collections::{
-    dynamic_array as vector,
-    // text_manipulation as tm
-};
+use bevy::prelude::{App, Plugin};
 
-fn main() {
-    let my_array = [1, 2, 3, 4, 5];
-    let key = 3;
-    println!("My integer array {:?}\n", my_array);
-    println!(
-        "=> {} is a member of that array: {}",
-        key,
-        search(key, my_array)
-    );
+pub struct GameAudioPlugin;
 
-    vector::vector_operations();
-    // Open your terminal at this project folder, then enter:
-    // cargo run -- "your username"
-    // tm::simple_cmd_program();   // Uncomment if you want try it.
-
-    vigenere_cipher_operations();
+impl Plugin for GameAudioPlugin {
+    fn build(&self, app: &mut App) {
+        app.insert_resource(audio_list());
+    }
 }
-
-fn vigenere_cipher_operations() {
-    let cipher = VigenereCipher::new("12345");
-
-    let encrypted_string = cipher.encrypt("Thinh Rustacean");
-    println!("\nEncrypted Text: {}", encrypted_string);
-    // A simulation for async tasks
-    std::thread::sleep(std::time::Duration::from_secs(1));
-    let decrypted_string = cipher.decrypt(encrypted_string.as_str());
-    println!("Decrypted Text: {}\n", decrypted_string);
+/// We can get game music_player from local assets or from a remote server
+fn audio_list() -> GameAudioResource {
+    let items = vec![
+        BLOB_SOUND, 
+        BALL_BOUNCE_SOUND, 
+        MUSIC_BACKGROUND, 
+        SCORE_SOUND
+    ];
+    GameAudioResource::new(items)
 }

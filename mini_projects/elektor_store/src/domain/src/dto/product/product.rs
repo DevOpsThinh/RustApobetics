@@ -110,7 +110,7 @@ impl Product {
         match &self.status {
             ProductStatus::InStock => "InStock",
             ProductStatus::OutOfStock => "OutOfStock",
-            ProductStatus::CheckedOut(info) => "CheckedOut",
+            ProductStatus::CheckedOut(info) => info,
         }
     }
 }

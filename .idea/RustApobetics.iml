@@ -8,8 +8,11 @@
       <sourceFolder url="file://$MODULE_DIR$/mini_projects/elektor_store/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/mini_projects/elektor_store/src/domain/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/mini_projects/elektor_store/src/presentation/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mini_projects/bevy_volleyball/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mini_projects/bevy_volleyball/src/scenes/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/language_foundation/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/mini_projects/bevy_volleyball/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

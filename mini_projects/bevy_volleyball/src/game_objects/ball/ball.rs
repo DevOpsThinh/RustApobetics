@@ -28,45 +28,50 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Created At: 21:30 - 12/11/2025
+Created At: 15:07 - 06/12/2025
 */
-use algorithms_foundation::basic_algorithms:: {
-    linear_search::search,
-};
-use algorithms_foundation::cryptography::vigenere_cipher:: {
-    Cipher,
-    VigenereCipher,
-};
-use language_foundation::std_collections::{
-    dynamic_array as vector,
-    // text_manipulation as tm
-};
+use bevy::prelude::{Component, Vec2};
 
-fn main() {
-    let my_array = [1, 2, 3, 4, 5];
-    let key = 3;
-    println!("My integer array {:?}\n", my_array);
-    println!(
-        "=> {} is a member of that array: {}",
-        key,
-        search(key, my_array)
-    );
-
-    vector::vector_operations();
-    // Open your terminal at this project folder, then enter:
-    // cargo run -- "your username"
-    // tm::simple_cmd_program();   // Uncomment if you want try it.
-
-    vigenere_cipher_operations();
+#[derive(Component)]
+pub struct Ball {
+    radius: f32,
+    velocity: Vec2
 }
 
-fn vigenere_cipher_operations() {
-    let cipher = VigenereCipher::new("12345");
+impl Ball {
+    pub fn new(radius: f32, velocity: Vec2) -> Self {
+        Ball { radius, velocity }
+    }
+    
+    pub fn get_radius(&self) -> f32 {
+        self.radius
+    }
 
-    let encrypted_string = cipher.encrypt("Thinh Rustacean");
-    println!("\nEncrypted Text: {}", encrypted_string);
-    // A simulation for async tasks
-    std::thread::sleep(std::time::Duration::from_secs(1));
-    let decrypted_string = cipher.decrypt(encrypted_string.as_str());
-    println!("Decrypted Text: {}\n", decrypted_string);
+    // pub fn set_velocity(&mut self, velocity: Vec2) {
+    //     self.velocity = velocity;
+    // }
+
+    pub fn get_velocity(&self) -> Vec2 {
+        self.velocity
+    }
+
+    pub fn update_velocity_y(&mut self, delta_time: f32) {
+        self.velocity.y += delta_time;
+    }
+
+    pub fn set_left_velocity_x(&mut self, x_velocity: f32) {
+        self.velocity.x = x_velocity;
+    }
+
+    pub fn set_right_velocity_x(&mut self, x_velocity: f32) {
+        self.velocity.x = -x_velocity;
+    }
+    
+    pub fn set_velocity_x(&mut self, x_pos: f32) {
+        self.velocity.x = x_pos
+    }
+    
+    pub fn set_velocity_y(&mut self, y_pos: f32) {
+        self.velocity.y = y_pos
+    }
 }

@@ -38,7 +38,7 @@ pub fn search(k: i32, my_arr: [i32; 5] ) -> bool {
             return true;
         }
     }
-    return false;
+    false
 }
 
 #[cfg(test)]

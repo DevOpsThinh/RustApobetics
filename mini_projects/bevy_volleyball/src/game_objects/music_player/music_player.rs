@@ -28,45 +28,61 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Created At: 21:30 - 12/11/2025
+Created At: 02:49 - 11/12/2025
 */
-use algorithms_foundation::basic_algorithms:: {
-    linear_search::search,
-};
-use algorithms_foundation::cryptography::vigenere_cipher:: {
-    Cipher,
-    VigenereCipher,
-};
-use language_foundation::std_collections::{
-    dynamic_array as vector,
-    // text_manipulation as tm
-};
+use bevy::prelude::{AudioPlayer, AudioSource, Component, Handle};
 
-fn main() {
-    let my_array = [1, 2, 3, 4, 5];
-    let key = 3;
-    println!("My integer array {:?}\n", my_array);
-    println!(
-        "=> {} is a member of that array: {}",
-        key,
-        search(key, my_array)
-    );
-
-    vector::vector_operations();
-    // Open your terminal at this project folder, then enter:
-    // cargo run -- "your username"
-    // tm::simple_cmd_program();   // Uncomment if you want try it.
-
-    vigenere_cipher_operations();
+pub trait MusicPlayer {
+    fn play(&self, source: Handle<AudioSource>) -> AudioPlayer;
 }
 
-fn vigenere_cipher_operations() {
-    let cipher = VigenereCipher::new("12345");
+pub enum AudioType {
+    Mp3,
+    Wav,
+    Aac,
+    Flac,
+    Ogg,
+}
 
-    let encrypted_string = cipher.encrypt("Thinh Rustacean");
-    println!("\nEncrypted Text: {}", encrypted_string);
-    // A simulation for async tasks
-    std::thread::sleep(std::time::Duration::from_secs(1));
-    let decrypted_string = cipher.decrypt(encrypted_string.as_str());
-    println!("Decrypted Text: {}\n", decrypted_string);
+#[derive(Component)]
+pub struct GameAudio {
+    audio_type: AudioType,
+}
+
+impl GameAudio {
+    pub fn new(audio_type: AudioType) -> Self {
+        GameAudio { audio_type }
+    }
+
+    // pub fn set_type(&mut self, audio_type: AudioType) {
+    //     self.audio_type = audio_type
+    // }
+    
+    pub fn get_type(&self) -> &AudioType {
+        &self.audio_type
+    }
+
+    fn mp3_play(&self, source: Handle<AudioSource>) -> AudioPlayer {
+        AudioPlayer::new(source)
+    }
+}
+
+impl MusicPlayer for GameAudio {
+    fn play(&self, source: Handle<AudioSource>) -> AudioPlayer {
+        match &self.get_type() {
+            AudioType::Mp3 => {
+                self.mp3_play(source)
+            }
+            AudioType::Wav => {
+                self.mp3_play(source)
+            }
+            _ => {
+                self.mp3_play(source)
+            }
+            // todo("Handle logic for other music_player types")
+            // AudioType::Aac => {}
+            // AudioType::Flac => {}
+            // AudioType::Ogg => {}
+        }
+    }
 }
