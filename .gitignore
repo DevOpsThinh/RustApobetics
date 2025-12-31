@@ -1,1 +1,3 @@
+# Ignore all build outputs in all subdirectories
 target/
+**/target/
